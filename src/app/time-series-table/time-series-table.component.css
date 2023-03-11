@@ -1,24 +1,30 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 20px;
-  max-height: 240px;
+  max-height: 400px;
   overflow-y: scroll;
   margin-left: 1.8em;
-  margin-top: 1em;
+  margin-top: 2em;
+  display: block;
 }
 
 th,
 td {
-  border: 1px solid #ccc;
   padding: 8px;
   text-align: center;
+  border: 1px solid #ddd;
+  color: rgb(52, 52, 52);
+}
+
+td:hover {
+    color: black;
 }
 
 th {
-  background-color: #eee;
+  background-color: #f2f2f2;
+  color: black;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+tr:hover {
+  background-color: #3f042468;
 }

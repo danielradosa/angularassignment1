@@ -97,6 +97,7 @@ label {
 .fancy-button {
   background-color: white;
   color: #1976d2;
+  border: 1px solid lightgray;
 }
 
 .fancy-button i.material-icons {
@@ -109,7 +110,7 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: #1976d2;
+  background-color: #38051c;
   padding: 16px;
   display: flex;
   flex-direction: row;
