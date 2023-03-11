@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { IData } from './interface';
 
-
 const delta = 10000;
 
 function getValue(): number {
