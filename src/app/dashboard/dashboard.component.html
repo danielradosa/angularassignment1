@@ -1,6 +1,9 @@
 <div>
     <h3>Welcome back admin.</h3>
-<button (click)="logout()">Logout</button>
+    <button (click)="logout()">Logout</button>
 </div>
 
-<app-time-series-table></app-time-series-table>
+<div class="container">
+    <app-time-series-table></app-time-series-table>
+    <app-chart [data]="datas"></app-chart>
+</div>

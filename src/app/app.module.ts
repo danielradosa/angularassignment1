@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TimeSeriesTableComponent } from './time-series-table/time-series-table.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { TimeSeriesTableComponent } from './time-series-table/time-series-table.
     TopBarComponent,
     DashboardComponent,
     LoginComponent,
-    TimeSeriesTableComponent
+    TimeSeriesTableComponent,
+    ChartComponent
   ],
   bootstrap: [
     AppComponent

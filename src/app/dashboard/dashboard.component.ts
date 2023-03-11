@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { DataService } from '../data.service';
+import { IData } from '../interface';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,7 +9,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  constructor(private router: Router) {}
+  datas: IData[] = [];
+
+  constructor(private dataService: DataService, private router: Router) {}
+
+  ngOnInit(): void {
+    this.dataService.getData().subscribe(data => {
+      this.datas = data;
+    });
+  }
 
   logout() {
     sessionStorage.clear();

@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+app-chart {
+  margin-left: 8em;
+}
+
 .container {
   display: flex;
   flex-direction: row;

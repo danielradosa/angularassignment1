@@ -8,7 +8,7 @@ import { IData } from '../interface';
   styleUrls: ['./time-series-table.component.css']
 })
 export class TimeSeriesTableComponent {
-  datas: IData[] = [];
+  public datas: IData[] = [];
 
   constructor(private dataService: DataService) { }
 
