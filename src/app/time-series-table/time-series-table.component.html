@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of data">
+            <td>{{ row.time | date: 'yyyy-MM-dd HH:mm:ss' }}</td>
+            <td>{{ row.value }}</td>
+        </tr>
+    </tbody>
+</table>

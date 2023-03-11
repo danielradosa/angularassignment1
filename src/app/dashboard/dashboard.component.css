@@ -1,0 +1,11 @@
+button {
+    background-color: brown;
+    margin-left: 2em;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 4em;
+}
